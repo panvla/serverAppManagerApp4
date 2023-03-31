@@ -29,7 +29,7 @@ public class ServerController {
 
     @GetMapping
     public ResponseEntity<Response> getServers() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(2);
         return ResponseEntity.ok(
                 Response.builder()
                 .timeStamp(LocalDateTime.now())
